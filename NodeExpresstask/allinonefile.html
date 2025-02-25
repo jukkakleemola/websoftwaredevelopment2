@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f4f4f4;
+            border-radius: 8px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section h2 {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Single Page Website</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is the home section of the page.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet ex in risus tincidunt, at tristique justo luctus. Vivamus venenatis eros vel dolor fringilla, sit amet consequat dui tempor. Donec tincidunt libero nisi, at varius lectus efficitur eget.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>This section provides information about the purpose of the page.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida nisi ac nunc suscipit, eu congue lectus euismod. Nam suscipit magna id purus fermentum, ac tempus mi fermentum. Vestibulum hendrerit turpis sed ex tristique, ac vehicula arcu volutpat.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach us at <a href="mailto:example@example.com">example@example.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Single Page Website. All rights reserved.</p>
+    </footer>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
