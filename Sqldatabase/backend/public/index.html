@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-sovellus</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+        }
+
+        input,
+        button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        .user-list {
+            margin-top: 20px;
+        }
+
+        .user-item {
+            background: #f8f9fa;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .user-info {
+            text-align: left;
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .actions button {
+            background: #dc3545;
+            cursor: pointer;
+            margin-bottom: 5px;
+            width: 100px;
+            padding: 10px;
+        }
+
+        .actions button:last-child {
+            margin-bottom: 0;
+        }
+
+        .actions button:hover {
+            background: #c82333;
+        }
+
+        #termsContainer {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            padding: 5px;
+            align-items: stretch;
+        }
+
+        #terms {
+            margin: 5px;
+            /* Varmista, ettei checkboxissa ole ylimääräisiä marginaaleja */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Käyttäjien hallinta</h2>
+
+        <input type="hidden" id="userId">
+        <input type="text" id="name" placeholder="Nimi">
+        <input type="email" id="email" placeholder="Sähköposti">
+        <input type="number" id="age" placeholder="Ikä" min="0" max="100">
+        <div id="termsContainer">
+            <label for="terms">Hyväksyn sopimusehdot:</label>
+            <input type="checkbox" id="terms" required>
+        </div>
+        <button onclick="addOrUpdateUser()">Lisää / Päivitä käyttäjä</button>
+
+        <div class="user-list" id="userList"></div>
+    </div>
+
+    <script>
+        async function fetchUsers() {
+            const response = await fetch('/users');
+            const users = await response.json();
+            const userList = document.getElementById('userList');
+            userList.innerHTML = '';
+            users.forEach(user => {
+                const userDiv = document.createElement('div');
+                userDiv.classList.add('user-item');
+                userDiv.innerHTML = `<div>
+                                        <p><strong>${user.name}</strong></p>
+                                        <p>${user.email}</p>
+                                        <p>Ikä: ${user.age}</p>
+                                    </div>
+                                    <div class="actions">
+                                        <button onclick="editUser(${user.id}, '${user.name}', '${user.email}', ${user.age})">Muokkaa</button>
+                                        <button onclick="deleteUser(${user.id})">Poista</button>
+                                    </div>`;
+                userList.appendChild(userDiv);
+            });
+        }
+
+        function resetForm() {
+            document.getElementById('userId').value = '';
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('age').value = '';
+            document.getElementById('terms').checked = false;
+            document.getElementById('termsContainer').style.display = 'block';
+        }
+
+        async function addOrUpdateUser() {
+            const id = document.getElementById('userId').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const age = document.getElementById('age').value;
+            const termsAccepted = document.getElementById('terms').checked;
+
+            if (!name || !email || !age || (!id && !termsAccepted)) {
+                alert('Täytä kaikki kentät ja hyväksy sopimusehdot!');
+                return;
+            }
+
+            const method = id ? 'PUT' : 'POST';
+            const url = id ? `/users/${id}` : '/users';
+
+            await fetch(url, {
+                method,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, age })
+            });
+
+            resetForm();
+            fetchUsers();
+        }
+
+        function editUser(id, name, email, age) {
+            document.getElementById('userId').value = id;
+            document.getElementById('name').value = name;
+            document.getElementById('email').value = email;
+            document.getElementById('age').value = age;
+            document.getElementById('termsContainer').style.display = 'none';
+
+            // Scrollaa top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        async function deleteUser(id) {
+            if (!confirm('Haluatko varmasti poistaa tämän käyttäjän?')) {
+                return;
+            }
+            await fetch(`/users/${id}`, { method: 'DELETE' });
+            fetchUsers();
+        }
+
+        fetchUsers();
+    </script>
+</body>
+
+</html>
