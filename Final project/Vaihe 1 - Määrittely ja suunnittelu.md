@@ -5,7 +5,7 @@ päivittäminen ja muokkaaminen, kaluston vikailmoitusten raportointi sekä huol
 
 ## 1. Käyttäjäpersoonat
 
-1. Jaska Johtaja yrityksen johtaja
+1. Jaska Johtaja - yrityksen johtaja
     - Ikä: 43
     - Koulutus: AMK
     - Kotipaikka: Tampere
@@ -21,7 +21,7 @@ päivittäminen ja muokkaaminen, kaluston vikailmoitusten raportointi sekä huol
     - Vuokrausten seuranta
     - QR scannaus
 
-2. Tane Työmies yrityksen työntekijä (varasto)
+2. Tane Työmies - yrityksen työntekijä (varasto)
     - Ikä: 38
     - Koulutus: AMK
     - Kotipaikka: Kokkola
@@ -30,7 +30,7 @@ päivittäminen ja muokkaaminen, kaluston vikailmoitusten raportointi sekä huol
     - Varaston hallinnan helppous
     - Pääsy tietoihin yhden apin kautta
     - In/out seurannan helppou­s
-    - Vikailmoitukset tietoo
+    - Vikailmoitukset tietoon
     - Huoltotarpeet
 - Rooli palvelun käyttäjänä:
     - Huolto taulukoiden ja vikalistojen hallinnointi
@@ -38,7 +38,23 @@ päivittäminen ja muokkaaminen, kaluston vikailmoitusten raportointi sekä huol
     - Vuokrausten seuranta
     - QR scannaus
 
-3. Matti Mikkonen asiakas (vieras)
+3. Lassi Huoltoja - huoltotiimin jäsen(varasto)
+    - Ikä: 29
+    - Koulutus: Media-assistentti
+    - Kotipaikka: Kokkola
+    - Työskentelee yrityksen huoltotiimissä ja vastaa laitteiden kunnossapidon sekä vikojen dokumentoinnista. Etsii keinoja tehostaa huoltojen seurantaa ja raportointia, jotta laitteiden toimivuus voidaan varmistaa mahdollisimman joustavasti myös kiireisinä aikoina.
+
+- Mitä hyötyy:
+    - Helppokäyttöinen huolto- ja vikailmoitusten hallinta
+    - Reaaliaikainen päivitys laitteiden kunnosta
+    - Pääsy tietoihin yhden apin kautta
+    - Vikailmoitukset tietoon
+    - Huoltotarpeet, tilanne kuva
+- Rooli palvelun käyttäjänä:
+    - Huolto taulukoiden ja vikalistojen hallinnointi/kuittaus
+    - QR scannaus
+
+4. Matti Mikkonen - asiakas (vieras)
     - Ikä: 18-60
     - Koulutus: Kaikki
     - Kotipaikka: Koko Suomi
