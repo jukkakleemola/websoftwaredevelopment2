@@ -150,7 +150,21 @@ Selkeä käyttöliittymä, joka tukee nopeaa reagointia ongelmatilanteissa
 
 ## 4. Arkkitehtuuri ja tekninen toteutus
 
-Add something
+Projektissa on tarkoitus kehittää selainpohjainen, responsiivinen Progressive Web App (PWA). Tämä mahdollistaa natiiviin mobiilisovelluksen kaltaisen käyttökokemuksen. Käyttäjät pääsevät myös helposti käsiksi QR-koodin lukemistoimintoon, joka hyödyntää mobiililaitteen kameraa. Toteutan PERN-stackilla (PostgreSQL, Express, React, Node.js).
+
+**Frontend:**
+
+- Käyttöliittymä rakennetaan Reactilla(Vite, TailwindCSS)-> responsiivinen UI:n kehittäminen.
+
+**Backend:**
+
+- Node.js + Express
+- REST API: Frontend kommunikoi backendin kanssa REST API:n kautta.
+
+**Tietokanta:**
+
+- Sovelluksen relaatiotietokantana on PostgreSQL.
+- Tietokanta toimii Google Cloud pilvessä.
 
 ## 5. Projektin hallinta ja käyttäjätestaus
 
