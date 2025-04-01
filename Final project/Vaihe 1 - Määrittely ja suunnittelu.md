@@ -95,6 +95,9 @@ päivittäminen ja muokkaaminen, kaluston vikailmoitusten raportointi sekä huol
 
 ## 3. Käyttöliittymän prototyyppi
 
+Figma prototyyppi mahdollisista sivuista.
+![etusivu](Pics/proto.png)
+
 **Etusivu**
 
 Tarkoitus:
