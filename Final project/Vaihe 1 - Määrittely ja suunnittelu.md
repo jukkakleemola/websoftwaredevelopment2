@@ -168,4 +168,8 @@ Projektissa on tarkoitus kehittää selainpohjainen, responsiivinen Progressive 
 
 ## 5. Projektin hallinta ja käyttäjätestaus
 
-Add something
+Projekti toteutetaan opintojaksolla määriteltyjen neljän vaiheen mukaisesti ja annetun opintojakson aikataulun mukaisesti.( I. Määrittely ja suunnittelu II. Perusrunko ja päätoiminnallisuudet III. Edistyneet ominaisuudet ja optimointi IV. Esittely). Projekti aloitettiin 24.3.2025 ja deadline on viikolla 15. 
+
+Projektin aikataulun seurannassa pyrin käyttämään Trelloa. Tehtävien versiohallintaan käytän Githubia.
+
+Käytettävyystestauksen toteutus suoritan itse pääasiassa. Käytän myös mahdollisuuksiaen mukaan muutamaa ulkopuolisilta kollegaa apuna. Tätä varten laadin käyttäjätestaussuunnitelman ja kysymykset joiden pohjalta tuloksia voi analysoida. Testauksella tutkitaan käyttöliittymän selkeyttä, käytettävyyttä ja toiminnallisuuksia.
