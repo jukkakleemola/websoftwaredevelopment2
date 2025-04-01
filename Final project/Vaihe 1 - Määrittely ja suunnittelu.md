@@ -96,7 +96,7 @@ päivittäminen ja muokkaaminen, kaluston vikailmoitusten raportointi sekä huol
 ## 3. Käyttöliittymän prototyyppi
 
 Figma prototyyppi mahdollisista sivuista.
-![etusivu](Pics/proto.png)
+![proto](Pics/proto.png)
 
 **Etusivu**
 
@@ -168,6 +168,12 @@ Projektissa on tarkoitus kehittää selainpohjainen, responsiivinen Progressive 
 
 - Sovelluksen relaatiotietokantana on PostgreSQL.
 - Tietokanta toimii Google Cloud pilvessä.
+
+**Tietokantamalli**
+
+
+Alustava tietokantamalli taulujen hahmottamiseen. Luotu tekoälyllä. Ei lopputuotokseen tällaisenaan.
+![dbdiagram](Pics/dbdiagram.png)
 
 ## 5. Projektin hallinta ja käyttäjätestaus
 
