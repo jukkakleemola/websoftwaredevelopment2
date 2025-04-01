@@ -65,7 +65,33 @@ päivittäminen ja muokkaaminen, kaluston vikailmoitusten raportointi sekä huol
 
 ## 2. Käyttötapaukset ja -tilanteet
 
-Add something
+1. Kaluston vuokrauslistan hallinta
+- Käyttäjät: Jaska Johtaja, Tane Työmies
+- Käyttäjä luo ja päivittää kaluston vuokrauslistoja. Järjestelmässä voi lisätä uusia laitteita, muokata olemassa olevia tietoja sekä poistaa vanhentuneita merkintöjä. Käyttöliittymässä on selkeä hakutoiminto ja suodattimia, jotta oikea kalusto löytyy nopeasti.
+- Tämä tukee päivittäistä työtä ja helpottaa vuokraustilanteen reaaliaikaista seurantaa.
+
+2. Vikailmoitusten raportointi ja seuranta
+- Käyttäjät: Tane Työmies, Lassi Huoltoja, Matti Mikkonen
+- Käyttäjä voi nopeasti raportoida havaitsemistaan laitevioista mobiilisovelluksen tai työpöytäversion kautta. Järjestelmä mahdollistaa vikailmoituksen liittämisen valokuvaan ja yksityiskohtaisiin kuvaustietoihin. Ilmoitukset kirjataan järjestelmään, minkä jälkeen huolto-tiimi saa reaaliaikaisen ilmoituksen ja voi priorisoida korjaustoimenpiteet.
+- Tämä helpottaa laitteiden kunnon seurantaa ja varmistaa, että vikailmoitukset eivät jää huomaamatta.
+
+3. Huoltokirjanpito ja ylläpitosuunnitelmien hallinta
+- Käyttäjät: Lassi Huoltoja
+- Järjestelmässä ylläpidetään huoltokirjaa, johon kirjataan kaikki laitteiden huoltotapahtumat ja tulevat huoltosuunnitelmat.
+- Käyttäjä voi asettaa muistutuksia säännöllisille huolloille ja tarkastuksille sekä seurata laitteiden huoltohistoriaa. Näin varmistetaan, että laitteet pysyvät toimintakunnossa ja mahdolliset ongelmat havaitaan ajoissa.
+- Tämä mahdollistaa ennaltaehkäisevän kunnossapidon ja järjestelmällisen huoltojen seurannan.
+
+4. Varaston reaaliaikainen tilannekuva ja analytiikka
+- Käyttäjät: Jaska Johtaja, Lassi Huoltoja, Tane Työmies
+- Käyttäjä saa reaaliaikaisen näkymän varaston tilasta: vuokraustilanteesta, vikatilanteista ja huoltotapahtumista.
+- Järjestelmä tarjoaa visuaalisia raportteja ja analytiikkaa, joiden avulla voidaan ennakoida varaston tarpeita ja optimoida logistiikkaprosesseja.
+- Auttaa strategisessa päätöksenteossa ja varaston tehokkaassa hallinnassa.
+
+5. QR-koodin skannaus ja mobiilikäyttö
+- Käyttäjät: Tane Työmies, Matti Mikkonen
+- Mobiilisovelluksen avulla käyttäjä voi skannata QR-koodin, joka liittää laitteen tiedot suoraan järjestelmään.
+- Skannaus mahdollistaa nopean vuokrauksen, vikailmoituksen tai huoltotietojen tarkistuksen paikan päällä ilman erillistä manuaalista tietojen syöttöä.
+- Tämä käyttöliittymän ominaisuus parantaa käyttökokemusta ja tehostaa kenttätyötä, kun tiedot päivittyvät reaaliajassa.
 
 ## 3. Käyttöliittymän prototyyppi
 
