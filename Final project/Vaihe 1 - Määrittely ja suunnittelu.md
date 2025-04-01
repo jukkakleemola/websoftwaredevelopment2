@@ -95,7 +95,58 @@ päivittäminen ja muokkaaminen, kaluston vikailmoitusten raportointi sekä huol
 
 ## 3. Käyttöliittymän prototyyppi
 
-Add something
+**Etusivu**
+
+Tarkoitus:
+
+Tarjota käyttäjälle nopea pääsy sovelluksen keskeiseen toiminnallisuuteen eli QR-koodin lukemiseen.
+
+Keskeiset elementit:
+
+Suuri ja selkeä QR-koodin lukupainike, joka vie suoraan laitteen tietojen tarkasteluun
+
+Yleiskatsaus: Pienet ilmoitus- ja päivitystiedot, kuten uusimmat vikailmoitukset ja huoltojen tilat
+
+**Laitelistaussivu**
+
+Tarkoitus:
+
+Laite voidaan valita listala ilman QR-skannausta.
+
+Keskeiset elementit:
+
+Listaukset laitekategorioittain: esim. laitetyyppi, malli, laite
+
+**Laitetiedot-sivu**
+
+Tarkoitus:
+Esittää yksityiskohtaiset tiedot juuri skannatusta laitteesta, mukaan lukien sen nykyinen vuokraustila, mahdolliset vikailmoitukset sekä huoltohistoria.
+
+Keskeiset elementit:
+
+Laitteen perustiedot: Malli, tila(varastossa/vuokralla)
+
+Vikailmoitusten lista: Näyttää, onko laitteesta tehty vikailmoituksia, ja antaa mahdollisuus lisätä uusi ilmoitus
+
+Huoltohistoria: Näyttää aikaisemmat huoltotapahtumat ja tulevat huoltotoimenpiteet
+
+Vuokraus-toiminto: Mahdollisuus merkitä laite vuokraamaksi, jolloin tieto päivittyy reaaliaikaisesti tietokantaan
+
+**Vikalmoitus- ja huoltosivu**
+
+
+Tarkoitus:
+Mahdollistaa vikailmoitusten raportointi ja huoltojen hallinta suoraan mobiililaitteella.
+
+Keskeiset elementit:
+
+Lomake vikailmoituksille, johon käyttäjä voi lisätä kuvia ja tekstikuvauksia
+
+Checkbox vian valitsemiseen listauksesta, kuvaus kenttä kirjaamiseen
+
+Selkeä käyttöliittymä, joka tukee nopeaa reagointia ongelmatilanteissa
+
+
 
 ## 4. Arkkitehtuuri ja tekninen toteutus
 
