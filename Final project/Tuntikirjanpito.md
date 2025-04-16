@@ -9,4 +9,4 @@ Tuntikirjanpito
 |9.4.2025|2|Vaihe II|Toiminnalisuuksien rakentaminen käyntiin|
 |11.4.2025|9|Vaihe II|Toiminnallisuuksien rakentelu jatkuu...|
 |13.4.2025|6|Vaihe II|Toiminnallisuuksien rakentelu jatkuu...|
-|16.4.2025|6|Vaihe II|Toiminnallisuuksien rakentelu jatkuu...|
+|16.4.2025|2|Vaihe II|Toiminnallisuuksien rakentelu jatkuu...|
