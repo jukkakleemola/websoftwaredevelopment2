@@ -10,3 +10,5 @@ Tuntikirjanpito
 |11.4.2025|9|Vaihe II|Toiminnallisuuksien rakentelu jatkuu...|
 |13.4.2025|6|Vaihe II|Toiminnallisuuksien rakentelu jatkuu...|
 |16.4.2025|2|Vaihe II|Toiminnallisuuksien rakentelu jatkuu...|
+|18.4.2025|6|Vaihe II|Toiminnallisuuksien viimeistely ja raportti|
+|21.4.2025|2|Vaihe III|Jatkokehitys, muokattu lomakkeita, korjattu tietokantaa|
