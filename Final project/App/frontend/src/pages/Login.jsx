@@ -2,13 +2,32 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');  // email tila
+  const [password, setPassword] = useState('');  // password tila
   const navigate = useNavigate();
 
-  const handleLogin = () => {
-    // Tässä voi toteuttaa oikean autentikoinnin, nyt simuloidaan siirtymistä
-    navigate('/main/scan');
+  const handleLogin = async () => {
+    try {
+      const response = await fetch('http://localhost:5000/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),  // käytä emailia ja passwordia
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        localStorage.setItem('token', data.token);  // Tallenna JWT-tunnus
+        navigate('/main/scan');  // Siirry scan-näkymään
+      } else {
+        const errorData = await response.json();
+        alert(errorData.error || 'Jotain meni pieleen.');
+      }
+    } catch (error) {
+      console.error('Virhe kirjautumisessa:', error);
+      alert('Jotain meni pieleen.');
+    }
   };
 
   return (
@@ -21,14 +40,14 @@ export default function Login() {
             placeholder="Email address"
             className="w-full px-3 py-2 rounded bg-white/20 text-white outline-none"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}  // emailin muutos
           />
           <input
             type="password"
             placeholder="Password"
             className="w-full px-3 py-2 rounded bg-white/20 text-white outline-none"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}  // passwordin muutos
           />
           <button
             onClick={handleLogin}
