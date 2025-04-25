@@ -29,7 +29,6 @@ export default function FaultReports() {
           {faultReports.map((report, index) => (
             <li key={index} className="mb-4">
              <p><strong>Ilmoitettu:</strong> {new Date(report.reported_at).toLocaleString('fi-FI')}</p>
-
               <p><strong>Vika:</strong> {report.description}</p>
             </li>
           ))}
