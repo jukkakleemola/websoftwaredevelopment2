@@ -92,12 +92,14 @@ export default function DeviceDetail() {
       <div className="space-y-4 mb-6">
         <Link
           to={`/main/device/${deviceId}/maintenanceLogs`}
+          state={{ identifier: device.identifier }}
           className="block p-2 bg-blue-600 rounded text-center hover:bg-blue-500"
         >
           Näytä huoltotiedot
         </Link>
         <Link
           to={`/main/device/${deviceId}/faultReports`}
+          state={{ identifier: device.identifier }}
           className="block p-2 bg-red-600 rounded text-center hover:bg-red-500"
         >
           Näytä vikailmoitukset

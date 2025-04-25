@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 
 export default function FaultReports() {
   const { deviceId } = useParams();
+  const location = useLocation();
+  const identifier = location.state?.identifier || deviceId; // Käytetään identifieria tai deviceId
+
   const [faultReports, setFaultReports] = useState([]);
 
   useEffect(() => {
@@ -21,14 +24,14 @@ export default function FaultReports() {
 
   return (
     <div className="bg-gray-900 text-white p-4 min-h-screen">
-      <h2 className="text-3xl font-bold mb-4">Vikailmoitukset laiteyksikölle: {deviceId}</h2>
+      <h2 className="text-3xl font-bold mb-4">Vikailmoitukset: {identifier}</h2>
 
       {/* Jos vikailmoituksia löytyy */}
       {faultReports.length > 0 ? (
         <ul>
           {faultReports.map((report, index) => (
             <li key={index} className="mb-4">
-             <p><strong>Ilmoitettu:</strong> {new Date(report.reported_at).toLocaleString('fi-FI')}</p>
+              <p><strong>Ilmoitettu:</strong> {new Date(report.reported_at).toLocaleString('fi-FI')}</p>
               <p><strong>Vika:</strong> {report.description}</p>
             </li>
           ))}
