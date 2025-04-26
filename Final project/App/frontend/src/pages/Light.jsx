@@ -149,7 +149,7 @@ export default function Light() {
 
       {/* Laiteyksiköt listana */}
       {selectedDevice && (
-        <div className="space-y-2">
+        <div className="space-y-2 pb-20">
           {loading ? (
             <p>Ladataan laiteyksiköitä...</p>
           ) : deviceUnits.length > 0 ? (
