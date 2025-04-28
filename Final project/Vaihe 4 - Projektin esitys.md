@@ -28,35 +28,20 @@ Tietokanta on PostgreSQL ja API:t mahdollistavat laitteen tietojen haun ja muokk
 ## Käyttötapausten yhteenveto
 
 Käyttötapaukset
-
-1. QR-koodin skannaus ja laitteen tietojen näyttäminen
-Toteutettu
-
-Sovelluksessa on oma ScanQr-sivu, jossa mobiililaitteen kamera skannaa QR-koodin. Skannauksen jälkeen käyttäjä siirtyy suoraan laitteen yksityiskohtaiselle sivulle (/device/:deviceId).
-
-Demo: Avaa ScanQr → skannaa esim. "RZB-001" → siirtyy laitteen sivulle.
-
-2. Laitteen tietojen tarkastelu
-Toteutettu
-
-Laitteen sivulla näkyy perusdata, kuten laitteen malli ja tunniste.
-
-Sivulta voi tarkastella huoltohistoriaa ja vikailmoituksia (linkit maintenance logs ja fault reports).
-
-3. Vikailmoituksen tekeminen (Fault Report)
-Toteutettu
-
-Laitteen sivulla voi täyttää lomakkeen vikailmoituksesta. Tiedot tallennetaan tietokantaan.
-
-4. Huoltomerkinnän lisääminen (Maintenance Log)
-Toteutettu
-
-Lomakkeella voi lisätä huoltotapahtumia yksittäiselle laitteelle.
-
-5. Laitteen merkitseminen käyttökiellossa olevaksi
-Toteutettu
-
-Laitteen tietosivulla voi klikata "Merkitse käyttökiellossa olevaksi" -nappia, joka muuttaa laitteen tilan kannassa.
+| Käyttötapaus | Toteutettu (Kyllä/Ei) |
+|----------|----------------------|
+|1. QR-koodin skannaus ja laitteen tietojen näyttäminen|Toteutettu osittain|
+Sovelluksessa on oma ScanQr-sivu, jossa mobiililaitteen kamera skannaa QR-koodin. Skannauksen jälkeen käyttäjä siirtyy suoraan laitteen yksityiskohtaiselle sivulle (/device/:deviceId). |Ei |
+Demo: Avaa ScanQr → skannaa esim. "RZB-001" → siirtyy laitteen sivulle.  | Ei |
+|2. Laitteen tietojen tarkastelu|Toteutettu|  |
+Laitteen sivulla näkyy perusdata, kuten laitteen malli ja tunniste.  |Kyllä |
+Sivulta voi tarkastella huoltohistoriaa ja vikailmoituksia (linkit maintenance logs ja fault reports). | Kyllä|
+|3. Vikailmoituksen tekeminen (Fault Report) |Toteutettu  |
+Laitteen sivulla voi täyttää lomakkeen vikailmoituksesta. Tiedot tallennetaan tietokantaan.  |Kyllä |
+|4. Huoltomerkinnän lisääminen (Maintenance Log) |Toteutettu  |
+Lomakkeella voi lisätä huoltotapahtumia yksittäiselle laitteelle. |Kyllä |
+|5. Laitteen merkitseminen käyttökiellossa olevaksi |Toteutettu |
+Laitteen tietosivulla voi klikata "Merkitse käyttökiellossa olevaksi" -nappia, joka muuttaa laitteen tilan kannassa. | Osittain|
 
 ---
 
