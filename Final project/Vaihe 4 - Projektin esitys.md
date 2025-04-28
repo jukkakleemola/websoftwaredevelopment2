@@ -118,3 +118,8 @@ Offline-tila ja PWA (Progressive Web App) ominaisuudet.
 |27.4.2025|6|Vaihe Iv|Loppuraporttia, tietokannan korjaus jatkuu, Google Cloud rikki edelleen osittain|
 
 Yhteensä aikaa käytetty: 50,5 tuntia.
+---
+
+## Esitys
+
+https://centriafi-my.sharepoint.com/:v:/r/personal/jukka_kleemola_centria_fi/Documents/webdev2/Kleemola_projektiesitys.mp4?csf=1&web=1&e=3COJAv
