@@ -13,3 +13,4 @@ Tuntikirjanpito
 |18.4.2025|6|Vaihe II|Toiminnallisuuksien viimeistely ja raportti|
 |21.4.2025|2|Vaihe III|Jatkokehitys, muokattu lomakkeita, korjattu tietokantaa|
 |25.4.2025|2|Vaihe III|Jatkokehitys, muokattu ulkoasua, korjattu tietokantaa, Google Cloud rikki|
+|27.4.2025|6|Vaihe Iv|Loppuraporttia, tietokannan korjaus jatkuu, Google Cloud rikki edelleen osittain|
