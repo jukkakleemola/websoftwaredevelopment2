@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { QrCode } from 'lucide-react';  // Lisää tämä rivi QR-koodikuvaketta varten
 import { Html5Qrcode } from 'html5-qrcode';
 
 const QrScanner = ({ onScanSuccess, onScanError }) => {
@@ -85,7 +84,7 @@ const QrScanner = ({ onScanSuccess, onScanError }) => {
             Scanned: {scannedData}
           </div>
         ) : (
-          <QrCode size={64} className="text-white" />  /* Korvattu teksti QR-koodikuvakkeella */
+          <p className="text-white text-xl">QR Code scanner</p>
         )}
       </div>
 
